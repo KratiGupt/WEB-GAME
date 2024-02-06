@@ -1,0 +1,105 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    display:grid;
+    height:100%;
+    place-items:centre;
+}
+
+.PlayGameImage{
+    background-image: url("https://t4.ftcdn.net/jpg/04/42/21/53/360_F_442215355_AjiR6ogucq3vPzjFAAEfwbPXYGqYVAap.jpg");
+    background-size:cover;
+   height:742px;
+}
+.navbar{
+    background-color:transparent;
+    color:antiquewhite;
+    height:50px;
+    display:flex;
+    align-items: center;
+}
+
+h3{
+    font-size:50px;
+    margin-left:30px;
+    margin-top:10px;
+}
+.some-icons{
+    display:flex;
+    color:antiquewhite;
+    position:absolute ;
+    right:100px;
+}
+
+i{
+    margin:15px;
+}
+.navbar:hover{
+    background-color: rgb(188, 179, 12);
+    h3{
+        color:rgb(8, 9, 80);
+    }
+    i{
+        color:rgb(8, 9, 80);
+    }
+}
+.outer{
+    position:absolute;
+    bottom:30px;
+    right:680px;
+    width:200px;
+    height:54px;
+    font-size:20px;
+    font-weight: 600;
+    border-radius: 50px;
+   
+   
+}
+.outer span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+    display:inline-block;
+    position:absolute;
+    background-color:#2b2828;
+   
+}
+.button span{
+  border-radius:50px;
+}
+
+ button{
+   position:absolute;
+   top:8%;
+   left:2%;
+   font-size:20px;
+    width:192px;
+    height:47px;
+    border-radius:50px;
+    background-color:#2b2828;
+    color:white;
+    outline:none;
+    border:none;
+    z-index:9;
+}
+a{
+ text-decoration:none;
+}
+.outer:hover span:nth-child(2){
+    filter:blur(10px);
+}
+.outer:hover{
+    background: linear-gradient(#07d9c4,#ffeb3b,rgb(241, 4, 190));
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
